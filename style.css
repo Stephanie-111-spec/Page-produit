@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+	background: black;
+	color: white;
+}
+
+header {
+	background-image: url("fond1.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+header ul {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	padding-left: 20px;
+}
+
+header img {
+	border-radius: 30px;
+	padding: 15px;
+}
+
+header a {
+	text-decoration: none;
+	color:  black;
+	text-shadow: 0 0 2px #efb810;
+	font-weight: bold;
+}
+header a:hover {
+	color: #efb810;
+	text-shadow: 0 0 2px #efb810;
+}
+
+#hero {
+	text-align: center;
+	padding: 30px;
+	background-image: url("fond2.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	height: auto;
+	color: white;
+	padding-bottom: 40px;
+}
+
+#hero h1 {
+	color: #efb810;
+	font-size: 2rem;
+	font-style: italic;
+	text-transform: uppercase;
+}
+#hero button {
+	border: solid #efb810;
+	background: black;
+	color: #efb810;
+	padding: 7px;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 11px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+   transition: 0.3s;
+}
+#hero button:hover {
+	border: none;
+	background: #efb810;
+	color: black;
+}
+#hero p {
+	letter-spacing: 2.3px;
+}
+#hero p:first-of-type {
+	margin-top: 20px
+}
+#hero h2{
+	color: #efb810;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-top: 20px
+}
+
+#à-propos {
+	padding: 20px;
+	background-image: url("fond3.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	color: white;
+	margin-bottom: 40px;
+	letter-spacing: 2px;
+	font-weight: none;
+}
+
+#à-propos .pourquoi h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#à-propos .pourquoi ul {
+	padding-bottom: 25px;
+	list-style: square;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+#à-propos .pourquoi ul li::marker{
+	color: #efb810;
+}
+
+#à-propos .description h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#à-propos .description p {
+	text-align: justify;
+	font-weight: 200;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#à-propos .caracteristiques h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#à-propos .caracteristiques ul {
+	padding-bottom: 25px;
+	list-style: square;
+	padding: 20px;
+}
+#à-propos .caracteristiques ul li::marker{
+	color: #efb810;
+}
+#collection {
+	background: black;
+	color: white;
+}
+
+#collection h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#collection .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	align-items: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#collection .produit {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: solid #efb810;
+	border-radius: 15px;
+	text-align: center;
+	background: black;
+	padding: 20px;
+}
+#collection .produit-image {
+  width: 100%;
+  height: 200px; /* Tu peux ajuster : 280px, 300px, 350px selon tes préférences */
+  object-fit: cover; /* TRÈS IMPORTANT */
+  border-radius: 8px; /* Optionnel mais élégant */
+  
+}
+#collection .produit h3 {
+	color: #efb810;
+	font-size: 16px;
+	margin: 8px 0;
+}
+#collection .produit p {
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 200;
+	margin: 8px 0;
+}
+
+#use_cases h3 {
+	color: #efb810;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#use_cases p {
+	text-align: justify;
+	font-weight: 200;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#garantie h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px;
+}
+#garantie ul {
+	padding-bottom: 25px;
+	list-style: square;
+	padding: 20px;
+}
+#garantie ul li::marker{
+	color: #efb810;
+}
+#garantie p {
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+#temoignages {
+	margin-bottom: 30px;
+	padding: 35px 20px;
+	margin-top: 30px;
+}
+#temoignages h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px;
+}
+#temoignages .personne {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	background: white;
+	border: 1px solid #efb810;
+	border-radius: 15px;
+	padding: 10px;
+	color: black;
+	margin-bottom: 10px;
+}
+
+#temoignages .personne img {
+	border-radius: 50%;
+	width: 150px;
+	height: 100px;
+	border: 2px solid #efb810;
+}
+
+.faq-cta {
+	margin-top: 30px;
+	background-image: url("fond4.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#faq h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px;
+}
+
+#faq p {
+	text-align: justify;
+	padding: 10px;
+	font-weight: 200;
+}
+
+#contact h2 {
+	color: #efb810;
+	font-size: 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+#contact button {
+	border: solid #efb810;
+	background: #efb810;
+	color: black;
+	padding: 9px;
+	border-radius: 15px;
+	font-weight: bold;
+	font-size: 11px;
+	margin-bottom: 30px;
+	cursor: pointer;
+   transition: 0.3s;
+}
+#contact button:hover {
+	border: none;
+	background: black;
+	color: #efb810;
+}
+#contact p {
+	font-size: 15px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+footer {
+	background-image: url("fond1.jpg");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0;
+	padding:0;
+}
+footer p:first-of-type {
+	color: black;
+	font-weight: bold;
+}
+footer p:last-of-type {
+	font-size: 18px;
+	color: black;
+}
+
+/* TABLET / ÉCRANS MOYENS */
+@media (max-width: 900px) {
+  #collection .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MOBILE / TÉLÉPHONE */
+@media (max-width: 600px) {
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #collection .container {
+    grid-template-columns: 1fr;
+  }
+
+  #temoignages .personne {
+    width: 100%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #efb810;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  #menu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 15px;
+    border-top: 1px solid #efb810;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #menu.show {
+    display: flex;
+	}
+}
